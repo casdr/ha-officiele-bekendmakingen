@@ -20,7 +20,7 @@ repos:
         name: Check code for common misspellings
         language: system
         types: [text]
-        exclude: ^(uv\.lock$|custom_components/officiele_bekendmakingen/translations/)
+        exclude: ^(uv\.lock$|custom_components/officiele_bekendmakingen/translations/|tests/fixtures/)
         args: [--ignore-words=.codespell-ignore, --skip=./custom_components/officiele_bekendmakingen/translations]
         entry: uv run codespell
       - id: mypy
