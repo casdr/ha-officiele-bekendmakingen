@@ -1,0 +1,11 @@
+{
+  "response" : {
+    "numFound" : 1,
+    "start" : 0,
+    "maxScore" : 14.324953,
+    "numFoundExact" : true,
+    "docs" : [ {
+      "gemeentenaam" : "Arnhem"
+    } ]
+  }
+}

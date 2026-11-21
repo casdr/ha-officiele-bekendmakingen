@@ -1,0 +1,14 @@
+{
+  "entity": {
+    "sensor": {
+      "notices": {
+        "default": "mdi:file-document-multiple-outline"
+      }
+    },
+    "event": {
+      "notice": {
+        "default": "mdi:file-document-alert-outline"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "domain": "officiele_bekendmakingen",
+  "name": "Officiële Bekendmakingen",
+  "codeowners": [
+    "@casdr"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/casdr/ha-officiele-bekendmakingen",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/casdr/ha-officiele-bekendmakingen/issues",
+  "loggers": [
+    "custom_components.officiele_bekendmakingen"
+  ],
+  "requirements": [],
+  "version": "0.1.0"
+}

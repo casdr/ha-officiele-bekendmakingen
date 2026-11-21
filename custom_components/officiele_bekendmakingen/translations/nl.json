@@ -1,0 +1,75 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Bekendmakingen bij een locatie",
+        "description": "Volg de officiële bekendmakingen (vergunningen, verkeersbesluiten, plannen) over een plek in de buurt van deze locatie.",
+        "data": {
+          "name": "Naam",
+          "location": "Locatie",
+          "types": "Soorten bekendmakingen",
+          "days": "Periode"
+        },
+        "data_description": {
+          "name": "De naam van het apparaat met de entiteiten van deze locatie.",
+          "location": "Sleep de pin naar de locatie en de cirkel naar de afstand die je wilt volgen.",
+          "types": "Laat leeg om alle soorten bekendmakingen te volgen.",
+          "days": "Bekendmakingen van de laatste dagen worden getoond."
+        }
+      },
+      "reconfigure": {
+        "title": "Locatie wijzigen",
+        "description": "Volg de officiële bekendmakingen (vergunningen, verkeersbesluiten, plannen) over een plek in de buurt van deze locatie.",
+        "data": {
+          "name": "Naam",
+          "location": "Locatie",
+          "types": "Soorten bekendmakingen",
+          "days": "Periode"
+        },
+        "data_description": {
+          "name": "De naam van het apparaat met de entiteiten van deze locatie.",
+          "location": "Sleep de pin naar de locatie en de cirkel naar de afstand die je wilt volgen.",
+          "types": "Laat leeg om alle soorten bekendmakingen te volgen.",
+          "days": "Bekendmakingen van de laatste dagen worden getoond."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "De gemeenten rond deze locatie konden niet worden opgezocht. Probeer het later opnieuw.",
+      "outside_netherlands": "Deze locatie ligt niet in Nederland."
+    },
+    "abort": {
+      "reconfigure_successful": "Instellingen bijgewerkt."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "notices": {
+        "name": "Bekendmakingen",
+        "unit_of_measurement": "bekendmakingen",
+        "state_attributes": {
+          "notices": {
+            "name": "Bekendmakingen"
+          }
+        }
+      }
+    },
+    "event": {
+      "notice": {
+        "name": "Nieuwe bekendmaking",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "published": "Gepubliceerd"
+            }
+          }
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "update_failed": {
+      "message": "De officiële bekendmakingen konden niet worden opgehaald: {error}"
+    }
+  }
+}

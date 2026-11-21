@@ -1,0 +1,75 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Notices near a location",
+        "description": "Follow the official notices (permits, traffic decrees, plans) that are about a place near this location.",
+        "data": {
+          "name": "Name",
+          "location": "Location",
+          "types": "Notice types",
+          "days": "Period"
+        },
+        "data_description": {
+          "name": "The name of the device with the entities of this location.",
+          "location": "Drag the pin to the location and the circle to the distance to follow.",
+          "types": "Leave empty to follow all types of notices.",
+          "days": "Notices of the last number of days are shown."
+        }
+      },
+      "reconfigure": {
+        "title": "Change the location",
+        "description": "Follow the official notices (permits, traffic decrees, plans) that are about a place near this location.",
+        "data": {
+          "name": "Name",
+          "location": "Location",
+          "types": "Notice types",
+          "days": "Period"
+        },
+        "data_description": {
+          "name": "The name of the device with the entities of this location.",
+          "location": "Drag the pin to the location and the circle to the distance to follow.",
+          "types": "Leave empty to follow all types of notices.",
+          "days": "Notices of the last number of days are shown."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not look up the municipalities around this location. Try again later.",
+      "outside_netherlands": "This location is not in the Netherlands."
+    },
+    "abort": {
+      "reconfigure_successful": "Settings updated."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "notices": {
+        "name": "Notices",
+        "unit_of_measurement": "notices",
+        "state_attributes": {
+          "notices": {
+            "name": "Notices"
+          }
+        }
+      }
+    },
+    "event": {
+      "notice": {
+        "name": "New notice",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "published": "Published"
+            }
+          }
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "update_failed": {
+      "message": "Could not get the official notices: {error}"
+    }
+  }
+}
