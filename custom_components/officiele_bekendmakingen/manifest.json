@@ -1,6 +1,9 @@
 {
   "domain": "officiele_bekendmakingen",
   "name": "Officiële Bekendmakingen",
+  "categories": [
+    "local_services"
+  ],
   "codeowners": [
     "@casdr"
   ],
