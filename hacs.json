@@ -3,5 +3,6 @@
   "homeassistant": "2026.10.0",
   "render_readme": true,
   "zip_release": true,
-  "filename": "officiele_bekendmakingen.zip"
+  "filename": "officiele_bekendmakingen.zip",
+  "country": "NL"
 }
